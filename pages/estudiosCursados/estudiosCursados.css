@@ -28,7 +28,7 @@ body::-webkit-scrollbar-thumb{
     border-radius: 8px
 }
 h2.hero-header__content{
-    font-size: 40px;
+    font-size: 35px;
     text-shadow: 0 0 5px var(--black-shadow);
 }
 div.hero-header__gradient {
