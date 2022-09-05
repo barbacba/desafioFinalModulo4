@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --text-color:#deeeff;
+    --primary-color:#2c2c2c;
+    --secondary-color:#3e7fdd;
+    --tertiary-color:#88ce65;
+    --black-shadow: rgba(0, 0, 0, 0.5);
+    --font:'Montserrat';
+    --default-font: sans-serif;
+}
+body{
+    margin: 0;
+    font-family: var(--font, --default-font);
+    color: var(--text-color);
+    background-color: var( --primary-color);
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-color) var(--black-shadow);
+}
+body::-webkit-scrollbar{
+    width:8px;
+    background-color:var(--black-shadow);
+    border-radius: 8px
+}
+body::-webkit-scrollbar-thumb{
+    background-color: var(--secondary-color);
+    border-radius: 8px
+}
+
+.new-contact-form{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--black-shadow);
+}

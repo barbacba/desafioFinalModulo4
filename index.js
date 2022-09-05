@@ -1,0 +1,20 @@
+import{pagesOptions} from "./src/model.js";
+(function () {
+   const heroEl = document.querySelector(".new-hero");
+   const heroOp = pagesOptions.hero;
+   addHero(heroEl,heroOp);
+   const headerEl =  document.querySelector(".new-header");
+   const headerOp = pagesOptions.header;
+   addHeader(headerEl, headerOp);
+   const devClEl = document.querySelector(".new-dev-cl");
+   const devClOp = pagesOptions.devCl;
+   addDevCl(devClEl,devClOp);
+   const contactFormEl = document.querySelector(".new-contact-form");
+   addContactForm(contactFormEl);
+   const appEl = document.querySelector(".new-app");
+   const appOp = pagesOptions.appCertificados;
+   addApp(appEl,appOp);
+   const footerEl = document.querySelector(".new-footer");
+   const footerOp = pagesOptions.footer;
+   addFooter(footerEl,footerOp);
+})();

@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --text-color:#deeeff;
+    --primary-color:#2c2c2c;
+    --secondary-color:#3e7fdd;
+    --tertiary-color:#88ce65;
+    --black-shadow: rgba(0, 0, 0, 0.5);
+    --font:'Montserrat';
+    --default-font: sans-serif;
+}
+body{
+    margin: 0;
+    font-family: var(--font, --default-font);
+    color: var(--text-color);
+    background-color: var( --primary-color);
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-color) var(--black-shadow);
+}
+body::-webkit-scrollbar{
+    width:8px;
+    background-color:var(--black-shadow);
+    border-radius: 8px
+}
+body::-webkit-scrollbar-thumb{
+    background-color: var(--secondary-color);
+    border-radius: 8px
+}
+.burger-is-active > div.nav-bar{
+    background-color: var(--black-shadow);
+    padding: 10px;
+}
+div.contact-form__container{
+    flex-direction: column;
+    z-index: 10;
+    gap: 0;
+    padding-top: 50px;
+}
+h1.contact-form__title{
+    text-align: center;
+    margin: 0 0 25px 0;
+}
